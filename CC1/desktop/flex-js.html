@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Flex Layout and Intro to JS</title>
+	<style>
+		div{
+			display:flex;
+		}
+		#wrapper{
+			flex-direction: column;
+			width:50%;
+			height:80%;
+			border:1px solid red;
+			padding: 10px;
+			margin:0 auto;
+		}
+		#wrapper #inner{
+			flex-grow:1;
+			flex-direction: row;
+		}
+		#wrapper #inner div{
+			flex-grow: 1;
+			border:1px dotted blue;
+			margin: 2px;
+			font-family: 'calibri';
+			justify-content: center;
+			align-items: center;
+			width:33%;
+		}
+		button{
+			border:none;
+			color:black;
+			display: inline-block;
+			padding: 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		var count = 0;
+		function buttonclicked(){
+			console.log(count);
+			count++;
+
+			var div = document.getElementById("div" + count);
+			if (div!=null){
+				div.innerHTML = "click";
+				div.style.backgroundImage = "url(aa.png)";
+				div.style.backgroundRepeat =  "no-repeat";
+				div.style.backgroundPosition = "center";
+				div.style.fontSize = "12px";
+				console.log(el.id);
+			}
+			if (count == 9){
+				count = 1;
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+			<div id="div1">1</div>
+			<div id="div2">2</div>
+			<div id="div3">3</div>
+			<div id="div4">4</div>
+			<div id="div5">5</div>
+			<div id="div6">6</div>
+			<div id="div7">7</div>
+			<div id="div8">8</div>
+			<div id="div9">9</div>
+		</div>
+		<button onclick="buttonclicked()">click</button>
+	</div>
+
+</body>
+</html>

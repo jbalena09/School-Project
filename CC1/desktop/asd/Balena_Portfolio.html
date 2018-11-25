@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<title>My Portfolio</title>
+		<style>
+			@font-face { font-family: 'Socialico';
+  				src:  url('fonts/Socialico.eot?6abp0d');
+ 		 		src:  url('fonts/Socialico.eot') format('embedded-opentype'),
+   		 		url('fonts/Socialico.ttf') format('truetype'),
+    			url('fonts/Socialico.woff') format('woff2'),
+    			url('fonts/Socialico.woff') format('woff'),
+    			url('fonts/Socialico.svg') format('svg');
+			}
+			p{
+				color:#FF0000;
+			}
+			ul{
+				list-style-image:url(img/kap.png);
+			}
+			ul #cc1{
+				color:skyblue;
+				text-decoration: none;
+			}
+
+			div{
+				clear: both;
+				display: table;
+			}
+			div img{
+				float:left;
+				width: 100px;
+				margin-right: 30px;
+			}
+			div h1{
+				float:right;
+				margin-top:65px;
+			}
+			#floatingdiv{
+				position: absolute;
+				top: 200px;
+				right: -124px;
+				transition: 1s ease-in-out;
+				background-color: #c6bcb6;
+			}
+			#floatingdiv:hover{
+				right: 0px;
+				transition: 1s ease-in-out;
+			}
+			#floatingdiv #socio span{
+				writing-mode: vertical-lr;
+				font-family: "Lucida Console", Monaco, monospace;
+				font-size: 20px;
+				display: inline-block;
+				vertical-align: top;
+				background-color: #667292;
+				padding: 15px;
+			}
+			#floatingdiv #socio ul{
+				list-style: none;
+    			padding: 20px 7px 0px;
+    			display: inline-block;
+    			margin: 0;
+			}
+			#floatingdiv #socio ul li{
+				display: inline-block;
+				color:black;
+				vertical-align: top;
+				margin-left: 2px;
+			}
+			#floatingdiv #socio ul li a{
+				font-family: 'Socialico';
+				color:white;
+				text-decoration: none;
+				font-size:40px;
+				transition: 1s ease;
+				border-radius:100%;
+			}
+			#floatingdiv #socio ul li a:hover{
+				font-size:45px;
+				transition: 1s ease;
+			}
+			#floatingdiv #socio ul li:nth-of-type(1) a:hover{
+				color:#4267b2;
+			}
+			#floatingdiv #socio ul li:nth-of-type(2) a:hover{
+			background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+			border-radius:100%;
+			}
+			#floatingdiv #socio ul li:nth-of-type(3) a:hover{
+				color:#1DA1F2;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<a href="Balena_UCMissionVision.html" target="_blank"><img class="logo" src="img/logo.png"></a>
+			<h1 title="School" id="schoolTitle" class="header bigText">University of Cordilleras</h1>
+		</div>
+		<hr />
+		<h2><u>About Me</u></h2>
+		<p>My name is <b>Julius Bernadin Baleña</b> and I am enrolled in Bachelor of Science in Computer Science at the University of Cordilleras. <br />My love for <b>programming</b> is the reason why I took BSCS.<br />I also love to <i>play and watch computer games</i>.<br />I am a <u>shy</u> person, my face becomes red when I am nervous. <br />I <b>hate </b> bright colors/light because it causes me to have migraine. </p>
+		<h2><i>Subjects</i></h2>
+			<ul>
+				<li><a href="Balena_LearningContract.html" id="cc1" target="_blank">CC1 - Computing Fundamentals</a></li>
+				<li>CC2 - Introduction to Computer Programming</li>
+				<li>CC7 - Human Computer Interaction</li>
+				<li>ENGL100 - Purposive Communication</li>
+				<li>FIL100 - Filipino sa Tanging Gamit</li>
+				<li>MATh200 - Mathematics in Modern World</li>
+				<li>NSTP1 - NSTP-CIVIC Welfare Training Service 1</li>
+				<li>PATh2 - Physical Activity Towards Health & Fitness 1</li>
+			</ul>
+
+
+
+	<!---- MENU NAV! --->
+	
+		<div id="floatingdiv">
+				<div id="Socio">
+					<span>Menu</span>
+					<ul>
+						<li><a href="https://www.facebook.com/jbalena09" target="_blank">f</a></li> <!-- private profile -->
+						<li><a href="http://instagram.com/jbalena09" target="_blank">i</a></li>
+						<li><a href="https://twitter.com/jbalena09/" target="_blank">t</a></li>
+					</ul>
+				</div>
+		</div>
+	</body>
+</html>

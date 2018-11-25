@@ -1,0 +1,31 @@
+.title{
+	font-size:50px;
+	color:red;
+}
+#div1 p{
+	color:#0000ff;
+}
+a{
+	text-decoration: none;
+	color:black;
+	font-size: 40px;
+}
+#page2link:hover{
+	background-position: center -10px;
+	font-size: 100px;
+}
+#page2link:hover{
+
+}
+#page2link:visited{
+	font-size: 100px;
+	color:#777700;
+}
+#pag2link{
+	font-size: 50px;
+	color:#ff000000;
+}
+#page2link:active{
+	color:#00FF00;
+	font-size: 50px;
+}

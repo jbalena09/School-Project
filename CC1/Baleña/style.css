@@ -1,0 +1,50 @@
+@font-face { font-family: 'Socialico';
+  src:  url('fonts/Socialico.eot?6abp0d');
+  src:  url('fonts/Socialico.eot') format('embedded-opentype'),
+    url('fonts/Socialico.ttf') format('truetype'),
+    url('fonts/Socialico.woff') format('woff2'),
+    url('fonts/Socialico.woff') format('woff'),
+    url('fonts/Socialico.svg') format('svg');
+}
+
+
+body{
+	margin: 0;
+	background-color:#FAF6E7;
+}
+#head{
+    height: 100px;
+    background-color: #007800;
+}
+#uclogo{
+	margin:0 auto;
+	background: url(img/ucheader.png);
+	width:960px;
+	height: 100px;
+}
+#VisionAndMission{
+	width:900px;
+	margin:0 auto;
+}
+#VisionAndMission h1{
+	background-color:#F5EDD1;
+	color:#7d6e47;
+	font-family: sans-serif;
+	font-size: 18px;
+	font-style: italic;
+	padding: 10px;
+}
+#VisionAndMission h1:hover{
+	color:#007800;
+}
+#VisionAndMission p{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size:13px;
+}
+#VisionAndMission p:hover{
+	color:#007800;
+}
+#VisionAndMission #history{
+	letter-spacing: 1px;
+	text-align: justify;
+}

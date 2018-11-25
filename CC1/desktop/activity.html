@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A</title>
+	<script type="text/javascript">
+		var count = 10;
+		function resetfunction(){
+			document.getElementById("counter").innerHTML = "10";
+			document.getElementById("background").style.background = "none";
+			document.getElementById("counter").style.display = "block";
+			document.getElementById("counter").style.color = "black";
+			count = 10;
+		}
+		function dontclick(){
+			count --;
+			document.getElementById("counter").innerHTML = count;
+			if(count == 3){
+				document.getElementById("counter").style.color = "red";
+			}
+			if(count == 0){
+				document.getElementById("background").style.background = "url('a.gif') no-repeat center";
+				document.getElementById("counter").style.display = "none";
+			}
+		}
+	</script>
+	<style type="text/css">
+		#wrapper{
+			width:900px;
+			margin: 50px auto 0;
+			padding-top:50px;
+		}
+		#button{
+			text-align: center;
+			margin-top:100px;
+		}
+		h1{
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+			font-size: 82px;
+		}
+		button{
+			border:none;
+			display: inline-block;
+			font-family: 'verdana';
+			font-size: 20px;
+			padding: 5px;
+		}
+		#background{
+			width:200px;
+			height: 200px;
+			margin:0 auto;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+			<div id="background">
+				<h1 id="counter">10</h1>
+			</div>
+		<div id="button">
+			<button id="click" onclick="dontclick()">Don't Click</button>
+			<br /> <br />
+			<button id="reset" onclick="resetfunction()">Reset</button>
+		</div>
+	</div>
+</body>
+</html>
